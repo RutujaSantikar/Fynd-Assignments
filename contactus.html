@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contactus</title>
+
+    <style>
+        nav ul li {
+          list-style-type: none;
+          display: inline-block;
+        }
+        span{
+            color:red;
+        }
+        form label{
+            display: block;
+        }
+        div label{
+            display: inline-block;
+        }
+        
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Example-consulting.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <h1>Example Consulting Pvt.Ltd.</h1>
+    </header>
+    <hr />
+    <main>
+        <h2>Contact us</h2>
+        <p>Phone:<a href="#">+001-123-456-7890</a></p>
+        <p>Email:<a href="#">hello@example.com</a></p>
+    </main>
+    <section>
+        <h2>Drop a message</h2>
+        <p>Please drop us a message by filling out this form, and we will get back to you withinv2 working days</p>
+        <p>Fields marked with <span>*</span>are required</p>
+
+        <form action="submit.html" method="post">
+
+            <label for="yourname">Your Name <span>*</span></label>
+            <input type="text" placeholder="John doe" id="yourname" name="yourname">
+            <label for="youremail">Your Email <span>*</span></label>
+            <input type="email" placeholder="John.doe@example.com" id="youremail" name="email" >
+            <p>What are you looking to build ?<span>*</span></p>
+            <select name="course" id="course">
+                <option value="choose">--Choose One--</option>
+                <option value="Blog">Blog</option>
+                <option value="Online Store">Online Store</option>
+                <option value="Game">Game</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <p>Platforms you plan to support <span>*</span></p>
+            <div>
+            <label for="web">Web
+            <input type="checkbox" name="web" id="web" value="Web">
+            </label>
+
+            <label for="mobile">Mobile
+            <input type="checkbox" name="mobile" id="mobile" value="Mobile">
+            </label>
+
+            <label for="desktop">Desktop
+            <input type="checkbox" name="desktop" id="desktop" value="Desktop">
+            </label>
+            </div>
+
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="20" rows="5"></textarea>
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+    <footer>
+        <hr>
+        <p>&#169example.com</p>
+        
+      </footer>
+  </body>
+</html>
